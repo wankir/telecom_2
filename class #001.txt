@@ -1,0 +1,25 @@
+/*~*~*~*~*~*~*~*~*~*~*/
+     Tipo de ruteo
+/*~*~*~*~*~*~*~*~*~*~*/
+vector distancia --> broadcast
+estado de enlace --> multicast
+
+/*~*~*~*~*~*~*~*~*~*~/
+   Método de ruteo
+/*~*~*~*~*~*~*~*~*~*~/
+SALTOS MINIMOS /* redes pequeñas */
+toma en cuenta la métrica para establecer la mejor ruta
+
+escalabilidad : el aumento de no. de dispositivos en la red (host o nodos)
+
+TIPO DE SERVICIO
+determinas : 	tipo de servicio
+		prioridad
+
+ToS 16 foward not
+
+costo monetario : cantidad de dispositivos que vas a implementar en la red
+/* saltos minimos (porcion de red) */
+
+bps <---- ancho de banda
+
