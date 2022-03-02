@@ -23,3 +23,16 @@ costo monetario : cantidad de dispositivos que vas a implementar en la red
 
 bps <---- ancho de banda
 
+RUTEO DIRECTO
+Protocolo ARP --> relaciona dos tipos de direccionamiento, cómo? 
+ / encara a dos routhers tomando en cuenta dos direc. (lógica & física) 
+
+enlazo A á B a partir de la dirección IP & MAC
+
+RUTEO INDIRECTO
+
+
+
+Routhers types
+Routhers de borde (edge routher).- enlazan a un segmento de red a otra que esta geograficamente distante
+´´ de area .- pertenecen a un segmento de red / para sacar info. a otro segmento requieren de un ER 
