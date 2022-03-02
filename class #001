@@ -1,8 +1,8 @@
 /*~*~*~*~*~*~*~*~*~*~*/
      Tipo de ruteo
 /*~*~*~*~*~*~*~*~*~*~*/
-vector distancia --> broadcast
-estado de enlace --> multicast
+$vector distancia --> broadcast
+$estado de enlace --> multicast
 
 /*~*~*~*~*~*~*~*~*~*~/
    Método de ruteo
@@ -30,9 +30,19 @@ Protocolo ARP --> relaciona dos tipos de direccionamiento, cómo?
 enlazo A á B a partir de la dirección IP & MAC
 
 RUTEO INDIRECTO
-
-
+en pocas palabras es un routher de borde
 
 Routhers types
 Routhers de borde (edge routher).- enlazan a un segmento de red a otra que esta geograficamente distante
 ´´ de area .- pertenecen a un segmento de red / para sacar info. a otro segmento requieren de un ER 
+
+/~*~*~*~*~*~*~*~*~*~*~*~*~*/
+ Protocolos de enrutamiento
+/~*~*~*~*~*~*~*~*~*~*~*~*~*/
+ESTÁTICO
+el NM (network manager) establece manualmente la config. de la red
+
+DINÁMICO
+la configuración de la red se automatiza (basta con que se configure una vez)
+
+pend. kahoot
