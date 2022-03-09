@@ -1,4 +1,4 @@
-
+Antecedent3s
 
 0. Tamaño
 1. Extensión & duración
@@ -18,7 +18,21 @@ Hay cuatro tipos, aunque dos son los más populares
 $ www es de clase A /* un octeto de red & tres de host */
 $ tecnología loopback --> probar la red
 
-0.0.0.0 no existe & 127.?.?.? es dedicada a pruebas
+0.0.0.1 no existe & 127.0.0.1 es dedicada a pruebas
+
+mascara de subred <----- refleja la porción de red de una dirección ip
+
+dirección de red 
+192.8.137.0
+
+dirección de host (gateway)
+192.8.137.1
+
+dirección de broadcasting (1 a M sin que se espere el ping)
+192.8.137.255
+
+
+
 
 
 
