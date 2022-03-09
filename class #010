@@ -1,0 +1,30 @@
+
+
+0. Tamaño
+1. Extensión & duración
+2. Disponibilidad
+
+subneteo --> asignar una red a la parte de un segmento de una infraestructura de red / convertir & asignar
+
+~*~*~*~*~*~*
+   RASGOS
+~*~*~*~*~*~*
+Hay cuatro tipos, aunque dos son los más populares 
+ -Tradicional
+ -VLSM
+ 
+...ayuda en temas de seguridad pero en algunos casos implica un desperdicio de enlaces
+
+$ www es de clase A /* un octeto de red & tres de host */
+$ tecnología loopback --> probar la red
+
+0.0.0.0 no existe & 127.?.?.? es dedicada a pruebas
+
+
+
+
+
+
+
+
+
