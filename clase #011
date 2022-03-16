@@ -1,9 +1,22 @@
+...........................................................
 /* continuación */
-broadcast --> pruebas de ese segmento
+broadcast --> pruebas de solo ese segmento
 clase D & E --> pruebas de las otras clases
 
-gateway ==> puerta de enlace
+default ==> clase A 10 && clase C 192
 broadcasting ==> son anónimos a cara de cada emisor
 
-clase A 10
-clase C 192
+~+~+~+~~+~+~+~~+~+~+~~+~+~+~~+~+~+~
+    PROTOCOLOS DE ENRUTAMIENTO
+~+~+~+~~+~+~+~~+~+~+~~+~+~+~~+~+~+~
+
+[]$ RIP
+usa la métrica (no. de saltos)
+métrica > 15 saltos --> doesn't work
+RFC --> Request For Comment
+// a diferencia del estandar el protocolo puede tener fallas
+  www.rfc-editor.org/search/rfc_search_detail.php
+  www.ietf.org
+
+
+..........................................................
