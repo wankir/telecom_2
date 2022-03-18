@@ -13,10 +13,20 @@ broadcasting ==> son anónimos a cara de cada emisor
 []$ RIP
 usa la métrica (no. de saltos)
 métrica > 15 saltos --> doesn't work
-RFC --> Request For Comment
+RFC <-- Request For Comment
 // a diferencia del estandar el protocolo puede tener fallas
   www.rfc-editor.org/search/rfc_search_detail.php
   www.ietf.org
+  
+[]$ Packet Tracer
+0. Topología
+1. Etiquetas
+2. Configuración
+3. Prueba & error
 
+DTE <-- Data Terminal Equipment
+Wan Coorporativa (Clase A) --> conexión externa
+// Practice0 .- WAN Privada c/LAN
+// Tarjeta WIC-2T 2 puertos seriales (fast ethernet)
 
 ..........................................................
