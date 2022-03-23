@@ -1,22 +1,23 @@
 ...........................................................
 /* continuación */
-broadcast --> pruebas de solo ese segmento
+broadcast ==> pruebas de solo ese segmento
+              son anónimos a cara de cada emisor
+unicast --> conexion de uno a uno (balanceo de carga)
 clase D & E --> pruebas de las otras clases
-
-default ==> clase A 10 && clase C 192
-broadcasting ==> son anónimos a cara de cada emisor
 
 ~+~+~+~~+~+~+~~+~+~+~~+~+~+~~+~+~+~
     PROTOCOLOS DE ENRUTAMIENTO
 ~+~+~+~~+~+~+~~+~+~+~~+~+~+~~+~+~+~
 
 []$ RIP
-usa la métrica (no. de saltos)
+recurre a la métrica (no. de saltos)
 métrica > 15 saltos --> doesn't work
-RFC <-- Request For Comment
-// a diferencia del estandar el protocolo puede tener fallas
+(RIP v.2 métrica > 30 saltos)
+tabla de ruteo se actualiza cada 90s.
+el paquete se desencapsula en c/u de los routhers
+/* a diferencia del estandar el protocolo puede tener fallas
   www.rfc-editor.org/search/rfc_search_detail.php
-  www.ietf.org
+  www.ietf.org */
   
 []$ Packet Tracer
 0. Topología
@@ -25,8 +26,33 @@ RFC <-- Request For Comment
 3. Prueba & error
 
 DTE <-- Data Terminal Equipment
+RFC <-- Request For Comment
 Wan Coorporativa (Clase A) --> conexión externa
 // Practice0 .- WAN Privada c/LAN
 // Tarjeta WIC-2T 2 puertos seriales (fast ethernet)
+
+~+~+~+~~+~+~+~~+~+~+~+~+~+~+~+
+    PROTOCOLO DE INTERIOR
+~+~+~+~~+~+~+~~+~+~+~+~+~+~+~+
+
+[]$ IGRP (TECNOLOGÏA) 
+// 90 m. en un solo cable + 5  
+// cable serial DCE proporciona una mayor vel. de transferencia
+tabla de vecinos, topologia & enrutamieno (edo. enlace) 
++ protocolos hello & protocolos dual
+disminuyen el no. de interrupciones y fallos
+tabla de ruteo se actualiza cada 90s.
+metrica > 255
+(EIGRP métrica > 224)
+métrica compuesta ==>
+no. de saltos, tráfico, tasa de errores & trayectorias
+// El tamaño de una red lo determina el no. de hosts
+
+se recomienda la tipologia de anillo para el protocolo IGRP 
+no prioriza cual es su mejor métrica (radom rules)
+
+
+[]$ EIGRP
+
 
 ..........................................................
