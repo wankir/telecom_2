@@ -37,7 +37,7 @@ Wan Coorporativa (Clase A) --> conexión externa
 
 []$ IGRP (TECNOLOGÏA) 
 // 90 m. en un solo cable + 5  
-// cable serial DCE proporciona una mayor vel. de transferencia
+// cable serial DCE mayor ancho de banda / es retrocompatible
 tabla de vecinos, topologia & enrutamieno (edo. enlace) 
 + protocolos hello & protocolos dual
 disminuyen el no. de interrupciones y fallos
@@ -53,6 +53,22 @@ no prioriza cual es su mejor métrica (radom rules)
 
 
 []$ EIGRP
+
+
+en / enable 
+modo privilegiado (#)
+modo genérico (>)
+
+conf t 
+host name_routher
+
+interface fa0/0
+
+show ip route
+router rip 
+ver 2
+net ip_address
+
 
 
 ..........................................................
