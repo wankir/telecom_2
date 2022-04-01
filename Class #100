@@ -1,0 +1,51 @@
+[]$ OSPF
+
+Mascara de Subred <--- Wildcard (espejo)
+255.255.0.0
+0.0.255.255
+
+no hay un limite en el no. de saltos (en la teoria)
+divide las redes a traves de areas (se debe establecer 
+una area cero || min. dos routhers || se sugiere dividir
+las principales areas)
+´´´´la primera actualización es manual'''
+/* code */
+if cambio is True: 
+  paquetesEnvio() 
+pass  
+
+autenticaión del routheo a traves de passwords
+mayor ancho de banda EQUALS menor costo
+
+Area ===> interior
+          exterior (sugiere usar BGP)
+          
+¬_¬ no tiene limites EQUALS ruteo lento
+                            colisiones
+
+[]$ EIGRP 
+Enhancced IGRP (es propiedad de Cisco)
+edo. de enlace (tablas de ruteo) =/ vector distancia
+algoritmo Dijkstra
+
+Multicasting ===> uno a todos
+                  estan a la espera
+                  
+¬_¬ 
+
+# theFutureIsNowOldMan
+segmentos <--- S.A. <--- areas
+EIGRP <--- OSPF (uso comercial) <--- OSPF + EIGRP <---- BGP (uso comercial) <---  BGP + OSPF 
+
+# breakUp
+routhers ===> area (un routher puede tener dos perfiles || 
+                    existen subareas EQUALS simulación)
+              interno (no conecta con otras areas)      
+              borde (intersección)
+              margen de sistema autónomo EQUALS borde 
+              (proporciona conexión a otra porción de red 
+               con otro protocolo de ruteo)              
+# passOrDie
+el uso de las wildcarts, el trabajar con S.A.,
+el ancho de banda, utilizar areas... 
+promueve que la red se considere integra
