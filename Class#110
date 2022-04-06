@@ -1,0 +1,12 @@
+[]$Wildcard
+clase A turn || clase B & clase C change
+
+show ip route
+router ospf 1(process ID)
+net 10.0.0.0 255.255.255.0 area 0
+do wr
+
+show ip protocol
+'' ip OSPF(estatus completo de ospf)
+'' ip interface serial0/0/0
+'' ip ospf neighbor (tabla de ruteo)
