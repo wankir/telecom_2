@@ -6,12 +6,12 @@ Mascara de Subred <--- Wildcard (espejo)
 
 no hay un limite en el no. de saltos (en la teoria)
 divide las redes a traves de areas (se debe establecer 
-una area cero || min. dos routhers || se sugiere dividir
-las principales areas)
+una area cero || min. dos routhers || se sugiere una area
+por routher)
 ´´´´la primera actualización es manual'''
 /* code */
-if cambio is True: 
-  paquetesEnvio() 
+if change is True: 
+  sendPacket() 
 pass  
 
 autenticaión del routheo a traves de passwords
