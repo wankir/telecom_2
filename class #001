@@ -1,8 +1,8 @@
 /*~*~*~*~*~*~*~*~*~*~*/
      Tipo de ruteo
 /*~*~*~*~*~*~*~*~*~*~*/
-$vector distancia --> broadcast
-$estado de enlace --> multicast
+$vector distancia --> principalmente broadcast (actualización de tablas cada 30s)
+$estado de enlace --> principalmente multicast (vecinos, tipología & enutamiento)
 
 /*~*~*~*~*~*~*~*~*~*~/
    Método de ruteo
@@ -16,9 +16,7 @@ TIPO DE SERVICIO
 determinas : 	tipo de servicio
 		prioridad
 
-ToS 16 foward not
-
-costo monetario : cantidad de dispositivos que vas a implementar en la red
+*costo monetario : cantidad de dispositivos que vas a implementar en la red
 /* saltos minimos (porcion de red) */
 
 bps <---- ancho de banda
