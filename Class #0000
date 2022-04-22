@@ -1,0 +1,15 @@
+[]$ Frame Relay
+< Económico | rápido | segura | administrada totalmente |
+  arrendado por un ISP ( proveedor de servicios de internet ) /> 
+   
+// data
++ transmisión de voz & video
++ trabaja en capa 2
++ dlci ( c/u de los puertos ) --> etiqueta / filtro
+                                max. 9 puertos  
+                                (100 - 900)
+// frame relay
+interface serial 0/0/0
+encapsulation frame-relay
+show frme-relay pvc
+      ´´        svc
