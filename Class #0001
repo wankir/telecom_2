@@ -1,0 +1,54 @@
+[]$ CME
+call manager express CISCO
+Voz / IP
+protocolo de ruteo ==> 
+prioriza la métrica por ancho de banda sobre saltos mínimos
+
+[]$ DHCP
+herramienta ---> permite direccionamiento ip automatico 
+a partir de un rango / segmento
+ruthers especificos 2811
+
+[]$ DHCP pool
+VLAN Mode Voice
+vlan comparte recursos con los puertos asignados
+
+outlast
+---------------------------------------------------¬
+dos modos : acceso / voz
+todos los puertos estan por default en la vlan 1
+
+//comands router part one
+ip dhcp pool phone
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+option 150 ip 192.168.10.1
+#-------------------------------#
+//comands switch part one
+interface range fastethernet0/1-5
+switchport mode access
+switchport access vlan 1
+#-------------------------------#
+//comands router part two
+Telephony-service
+max-dn 5 | extension
+max-ephones 5
+ip source-address 192.168.10.1 port 2000
+auto assign 1 to 5
+#-------------------------------#
+//comands switch part two
+ephone-dn 1 
+number 12345
+do wr
+ephone-dn 2 
+number 12345
+do wr
+
+3 code lines each router
+ninguna ocasión esta dirección se asigne (reservar la dirección)
+66, 67, 150 (opciones config. dhcp) --> reservar direcciones de 
+                                        gateway
+
+ESCENTIALS                                  
+CCNA 1                                      
+CCNA 2
