@@ -11,5 +11,6 @@
 // frame relay
 interface serial 0/0/0
 encapsulation frame-relay
-show frme-relay pvc
+show frame-relay pvc
       ´´        svc
+https://askanydifference.com/difference-between-pvc-and-svc-with-table/
