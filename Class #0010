@@ -1,0 +1,45 @@
+brunking ?!
+asignarle un número
+	     nombre
+	     segmento de red
+	     
+1- 10		VLAN 10		Coord	192.168.10.0/24
+11 - 20		VLAN 20		Jefes	´´
+21   		VLAN 100	Adm	´´
+Otros (22-24)	VLAN 90		Sec	´´
+
+switches --> UTP cruzado <-- puerto 24
+
+// switch part one 
+show vlan brief
+vlan database
+vlan 10 name coord
+vlan 20 name chiefs
+vlan 90 name security
+vlan 100 name root
+// switch part two
+conf t 
+vlan 10 
+name coord
+ex
+copy running-config startup-config
+// switch part three
+conf t  
+interface fa 0/21 | interface range
+switchport mode access
+switchport access vlan 100
+ex
+// ´´ part  four
+interface fa0/24
+switchport mode trunk
+switchport trunk native vlan 90
+show interfaces trunk
+end
+// ´´ part five
+interface vlan 100
+ip address 192.168.100.2 255.255.255.0
+ip default-gateway 192.168.100.1
+// ´´ part six
+line vty 0 5
+password abcd
+enable secret 1234
